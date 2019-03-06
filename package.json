@@ -1,0 +1,29 @@
+{
+  "name": "react-exercise",
+  "version": "1.0.0",
+  "description": "student-lead react review",
+  "author": "Kin Chan <xkinchanx@gmail.com>",
+  "main": "index.js",
+  "repository": "https://github.com/omegak911/react-exercise.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server open client/dist/index.html",
+    "build": "webpack -w"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.6.5",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-plugin-react": "1.0.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "6.24.1",
+    "webpack": "2.6.1"
+  }
+}
