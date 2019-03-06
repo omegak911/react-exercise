@@ -33,12 +33,13 @@ class App extends Component {
   }
 
   render() {
-  return (
-    <div id="mainApp" className="center vertical">
-      {mostLiked.likes > 0 && <div id="mostLiked"><div>Most Liked:</div><ListItem number={'hey'} item={mostLiked}/></div>}
-      <div>SHOULD DISPLAY CREATE</div>
-      <div>SHOULD DISPLAY LIST</div>
-    </div>
-    )
+    let { mostLiked } = this.state;
+    return (
+      <div id="mainApp" className="center vertical">
+        {mostLiked.likes > 0 && <div id="mostLiked"><div>Most Liked:</div><ListItem number={'hey'} item={mostLiked}/></div>}
+        <div>SHOULD DISPLAY CREATE</div>
+        <div>SHOULD DISPLAY LIST</div>
+      </div>
+      )
   }
 }
