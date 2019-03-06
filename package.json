@@ -7,11 +7,12 @@
   "repository": "https://github.com/omegak911/react-exercise.git",
   "license": "MIT",
   "scripts": {
-    "start": "live-server open client/dist/index.html",
+    "start": "nodemon server/index.js",
     "build": "webpack -w"
   },
   "dependencies": {
     "express": "^4.16.4",
+    "nodemon": "^1.18.10",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
