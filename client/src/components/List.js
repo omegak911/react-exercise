@@ -1,11 +1,13 @@
 import React from 'react';
+import ListItem from './ListItem'
 
-const List = () =>
+const List = (props) =>
   <div className="center vertical" id="list">
-    <div>List item</div>
-    <div>List item</div>
-    <div>List item</div>
-    <div>List item</div>
-    <div>List item</div>
-    <div>List item</div>
+  {props.name.map(function(item, index){
+      //render ea item
+      return <ListItem item={item} index={index} deleteItem={props.deleteItem} updateItem={props.updateItem}/>
+    })}
+    
   </div>
+
+  export default List;
